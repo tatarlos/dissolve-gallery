@@ -156,9 +156,13 @@ main section{
     margin:20px auto;
     padding:10px;
     border:#999 2px solid;
+    height:720px;
+    position: relative;
+
 }
 
 .gallery .images img{
+    position: absolute;
 }
 
 .gallery .thumbs{
@@ -172,14 +176,20 @@ main section{
     border:#666666 2px solid;
     margin:4px;
     width:69px;
+    filter:grayscale(1);
+    opacity: .5;
 }
 
 .gallery .thumbs img.selected{
-    border-color:#FF6600;;
+    border-color:#FF6600;
+    opacity:1;
+    filter:none;
 }
 
 .gallery .thumbs img:hover{
     cursor:pointer;
+    filter:none;
+    opacity: 1;
 }
 
 .gallery .prev-btn,
